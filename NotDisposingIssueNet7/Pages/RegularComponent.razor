@@ -1,0 +1,13 @@
+﻿@page "/component"
+@using NotDisposingIssueNet7.Components
+
+<h3>Regular Component</h3>
+<Button @onclick="ShowComponentButtonClicked">@GetShowComponentButtonText()</Button>
+@if (@ShowComponent)
+{
+	<ComponentOne></ComponentOne>
+}
+else
+{
+}
+
